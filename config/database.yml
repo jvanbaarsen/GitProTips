@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  min_messages: warning
+  pool: 2
+  timeout: 5000
+
+development:
+  <<: *default
+  database: gitprotips_development
+
+test:
+  <<: *default
+  database: gitprotips_test
