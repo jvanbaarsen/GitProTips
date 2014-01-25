@@ -1,7 +1,7 @@
 == README
 
 [![Code Climate](https://codeclimate.com/github/jvanbaarsen/GitProTips.png)](https://codeclimate.com/github/jvanbaarsen/GitProTips)
-[![Build Status](https://travis-ci.org/jvanbaarsen/GitProTips.png?branch=travis)](https://travis-ci.org/jvanbaarsen/GitProTips)
+[![Build Status](https://travis-ci.org/jvanbaarsen/GitProTips.png?branch=master)](https://travis-ci.org/jvanbaarsen/GitProTips)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
