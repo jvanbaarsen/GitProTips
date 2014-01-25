@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Gitprotips::Application.config.secret_key_base = ENV['RAILS_SECRET_TOKEN']
+Gitprotips::Application.config.secret_key_base = ENV['RAILS_SECRET_TOKEN'] || 'secret'
