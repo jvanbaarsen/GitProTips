@@ -1,0 +1,10 @@
+language: ruby
+env:
+  global:
+    - DB=postgresql
+    - TRAVIS=true
+    - RAILS_SECRET_TOKEN=1234
+rvm:
+  - 2.0.0
+notifications:
+  email: false
