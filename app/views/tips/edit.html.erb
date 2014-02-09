@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="page-header">
+    <h1>Update tip</h1>
+  </div>
+</div>
+<div class="row">
+  <%= form_for @tip, url: edit_tip_path(@tip), html: {class: 'form-vertical'} do |f| %>
+    <div class="form-group <%= "has-error" if @tip.errors[:title].present? %>">
+      <%= f.label :title, class: 'control-label' %>
+      <%= f.text_field :title, class: 'form-control', placeholder: 'Title of your tip' %>
+    </div>
+    <div class="form-group <%= "has-error" if @tip.errors[:content].present? %>">
+      <%= f.label :content, class: 'control-label' %>
+      <%= f.text_area :content, class: 'form-control', placeholder: 'Your awesome tip', rows: 13 %>
+    </div>
+    <div class="form-group">
+      <%= link_to "Go back", root_path %>
+      <%= f.submit "Update tip", class: 'btn btn-success pull-right' %>
+    </div>
+  <% end %>
+</div>

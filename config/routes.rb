@@ -8,5 +8,7 @@ Gitprotips::Application.routes.draw do
     get 'new' => 'tips#new', as: 'new_tip'
     post 'new' => 'tips#create'
     get ':id' => 'tips#show', as: 'tip'
+    get ':id/edit' => 'tips#edit', as: 'edit_tip'
+    patch ':id/edit' => 'tips#update'
   end
 end
