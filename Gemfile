@@ -14,6 +14,7 @@ gem 'jbuilder', '~> 1.2'
 gem "unicorn", "~> 4.8.0"
 gem "sorcery", "~> 0.8.5"
 gem "bootstrap-sass-rails", "~> 3.0.3.0"
+gem "redcarpet", "~> 3.0.0"
 
 group :development do
   gem 'hirb', '0.7.1'
