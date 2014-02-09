@@ -1,4 +1,4 @@
 <div class="tip" id="tip_<%= tip.id%>">
   <h2><%= link_to tip.title, tip_path(tip) %></h2>
-  <p><%= tip.content %></p>
+  <p><%= markdown tip.content %></p>
 </div>
