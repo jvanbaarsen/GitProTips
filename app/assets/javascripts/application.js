@@ -14,3 +14,14 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require twitter/bootstrap
+//= require highlight.pack
+
+$(function() {
+  initHightlight();
+});
+
+function initHightlight() {
+  $('.highlight pre code').each(function(i, e) {
+    hljs.highlightBlock(e);
+  });
+}
